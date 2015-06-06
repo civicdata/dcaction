@@ -172,7 +172,7 @@ function drawChoropleth(){
       zoom: 12,
       minZoom: 10,
       maxZoom: 14,
-      center: new google.maps.LatLng(38.89555, -77.01551),
+      center: new google.maps.LatLng(38.2500, -85.7667),
       mapTypeId: google.maps.MapTypeId.ROADMAP,
       streetViewControl: false,
       panControl: false,
