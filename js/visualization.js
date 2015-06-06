@@ -154,7 +154,6 @@ function drawChoropleth(){
     choropleth_data = choropleth;
     source_data = source;
     choropleth_data.forEach(function(d) {
-      console.log(d);
       all_data[d.council_num] = d;
       choropleth_data[d.council_num] = +d.tot_pop_val;
     });
@@ -331,7 +330,7 @@ function populateNavPanel(data) {
 
     $menu.empty();
 
-    if (type === 'neighborhood') {
+    if (type === 'council') {
       _.chain(fields).groupBy('category').each(function (fields, category) {
         $menu.append(categoryTemplate(category));
         _.forEach(fields, function (field) {
@@ -357,20 +356,6 @@ function populateNavPanel(data) {
       $("#legend-panel").show();
       $("#details p.lead").show();
     }
-  });
-
-  // school points
-  $(".schools-menu > li").on("click", "a", function(e){
-    e.preventDefault();
-
-    var $$parent = $(this).parent();
-    if ($$parent.hasClass("selected")) {
-      removePoints($(this).attr("id"));
-    } else {
-      drawPoints($(this).attr("id"));
-    }
-    $$parent.toggleClass("selected");
-
   });
 
   // other points
@@ -513,28 +498,17 @@ function drawPoints(type) {
       packer = sm.packer(),
       color;
 
-  d3.json('data/' + type + '.json', function (data){
-    var poi = g.select("#points").selectAll(".poi").data(data[type], function(d) {
-      return d.name;
+  d3.json('data/kids_count_data/' + type + '.geojson', function (data){
+    var poi = g.select("#points").selectAll(".poi").data(data["features"], function(d) {
+      return d.properties.Match_addr;
     });
 
-    if (type === "charters") {
-      poi.enter().append("rect")
-        .attr("class", "poi " + type + (isSchool ? " school" : ""))
-        .attr("width", 7)
-        .attr("height", 7)
-        .attr("r", 4)
-        .attr("transform", function(d) {
-          return "translate(" + gmapProjection([d.long, d.lat]) + ")";})
-        .append("title").text(function(d){return d.name;});
-    } else {
-      poi.enter().append("circle")
-        .attr("class", "poi " + type + (isSchool ? " school" : ""))
-        .attr("r", 4)
-        .attr("transform", function(d) {
-          return "translate(" + gmapProjection([d.long, d.lat]) + ")";})
-        .append("title").text(function(d){return d.name;});
-    }
+    poi.enter().append("circle")
+      .attr("class", "poi " + type + (isSchool ? " school" : ""))
+      .attr("r", 4)
+      .attr("transform", function(d) {
+        return "translate(" + gmapProjection(d.geometry.coordinates) + ")";})
+      .append("title").text(function(d){return d.properties.Match_addr;});
 
     if (isSchool) { poi.on("click", displayPointsData); }
     packMetros();
@@ -602,7 +576,7 @@ function drawPoints(type) {
 
   function packMetros() {
     var elements = d3.selectAll("#points .poi")[0];
-    packer.elements(elements).start();
+    ///packer.elements(elements).start();
   }
 }
 
@@ -863,7 +837,6 @@ function bringNeighborhoodToFront() {
 }
 
 function hoverNeighborhood(d) {
-  console.log(d);
   // keep active path as the displayed path.
   if($("path.active").length > 0) {
     // keep centered neighborhood path up front

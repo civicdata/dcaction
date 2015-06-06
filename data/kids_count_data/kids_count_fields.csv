@@ -1,8 +1,8 @@
 id,name,type,category,new
-healthy_centers,Health Centers,POI,,FALSE
-healthy_food,Healthy Food,POI,,FALSE
-payday_lend,Payday Lending,POI,,FALSE
-child_care,STARS-rated Child Care Facilities ,POI,,FALSE
+health_centers,Health Centers,poi,,FALSE
+healthy_food,Healthy Food,poi,,FALSE
+payday_lending,Payday Lending,poi,,FALSE
+stars_rated_childcare,STARS-rated Child Care Facilities,poi,,FALSE
 abus_ref_val,Referrals to child protection services for abuse_neglect (2010-2012) number,council,Health & Safety,FALSE
 abus_ref_rat_val,Referrals to child protection services for abuse_neglect (2010-2012) percent,council,Health & Safety,FALSE
 abus_subs_val,Substantiated cases of child abuse_neglect (2010-2012) number,council,Health & Safety,FALSE
