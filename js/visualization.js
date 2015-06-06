@@ -154,6 +154,7 @@ function drawChoropleth(){
     choropleth_data = choropleth;
     source_data = source;
     choropleth_data.forEach(function(d) {
+      console.log(d);
       all_data[d.council_num] = d;
       choropleth_data[d.council_num] = +d.tot_pop_val;
     });
@@ -862,6 +863,7 @@ function bringNeighborhoodToFront() {
 }
 
 function hoverNeighborhood(d) {
+  console.log(d);
   // keep active path as the displayed path.
   if($("path.active").length > 0) {
     // keep centered neighborhood path up front
