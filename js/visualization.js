@@ -635,6 +635,10 @@ function drawChart(){
 }
 
 function updateChart(data){
+  // PAT DEMO
+  return;
+  // END PAT DEMO
+
   var ethdata = [
     {name: "white", under18: data.pop_nothisp_white_under18_perc, over18: data.pop_nothisp_white_perc},
     {name: "black", under18: data.pop_nothisp_black_under18_perc, over18: data.pop_nothisp_black_perc},
@@ -859,7 +863,7 @@ function hoverNeighborhood(d) {
     activeId = d.properties.council_num;
     if (activeData !== "no_neighborhood_data") {
       setVisMetric(activeData, all_data[activeId][activeData]);
-      //updateChart(all_data[activeId]); -- bret
+      updateChart(all_data[activeId]);
     } else {
       setVisMetric(null, null, true);
     }
