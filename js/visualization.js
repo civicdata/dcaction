@@ -142,7 +142,7 @@ function drawChoropleth(){
 
   queue()
     .defer(d3.csv, "data/fields.csv")
-    .defer(d3.json, "data/neighborhoods44.json")
+    .defer(d3.json, "data/kids_count_data/council_bound2.geojson")
     .defer(d3.csv, "data/neighborhoods.csv")
     .defer(d3.csv, "data/source.csv")
     .await(setUpChoropleth);
@@ -154,8 +154,8 @@ function drawChoropleth(){
     choropleth_data = choropleth;
     source_data = source;
     choropleth_data.forEach(function(d) {
-      all_data[d.gis_id] = d;
-      choropleth_data[d.gis_id] = +d.population_total;
+      all_data[d.council_da] = d;
+      choropleth_data[d.council_da] = +d.population_total;
     });
 
     all_data.dc = {
