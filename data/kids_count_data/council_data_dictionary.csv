@@ -1,0 +1,68 @@
+kids count file name,variable 
+3 and 4-year-olds attending nursery_preschool enrolled in a private program (2007-2011),priv_nurs_3-4
+3 and 4-year-olds enrolled in JCPS preschool (SY 2012-2013),jcps_3-4_pre
+4th graders scoring proficient or above in reading and math (SY 2011-12),gra4_math_n
+4th graders scoring proficient or above in reading and math (SY 2011-12),gra4_math_p
+8th graders scoring proficient or above in reading and math (SY 2011-12),gra4_read_n
+8th graders scoring proficient or above in reading and math (SY 2011-12),gra4_read_p
+6th-12th graders enrolled in one of three alternative schools for discipline (SY 2011-2012),gr6-12_disc
+8th graders scoring proficient or above in reading and math (SY 2011-12t),gra8_math_n
+8th graders scoring proficient or above in reading and math (SY 2011-12),gra8_math_p
+8th graders scoring proficient or above in reading and math (SY 2011-12),gra8_read_n
+8th graders scoring proficient or above in reading and math (SY 2011-12),gra8_read_p
+"12th graders graduating within 4 years, or more with an IEP (SY 2011-2012)",gra12_grad4p
+"12th graders graduating within 4 years, or more with an IEP (SY 2011-2012)",gra12_grad4n
+16-19 year olds not enrolled in school and not working (Metro Council District),no_work-sch
+Adults age 25 and older without an associate's degree or higher (2007-2011),no_degre25
+Births to teens ages 15-19 (2008-2010),teenbir_num
+"Births to teens ages 15-19 (2008-2010), Rate per 1,000",teenbir_rate
+"Child and teen death rate (ages 1-19) (2008-2010) Rate per 10,000",childdeath19
+Child deaths ages 1-14 (2008-2010) Number,childdeath14
+Child population (2010) Number,childpop_n
+Child population (2010) Percent,childpop_p
+Child population by race_ethnicity (2010),childpop_bla
+Child population by race_ethnicity (2010),childpop_his
+Child population by race_ethnicity 2010),childpop_oth
+Child population by race_ethnicity (2010),childpop_whi
+Child victims of serious violent crimes (2010-2012) number,chi_crime_n
+"Child victims of serious violent crimes (2010-2012) rate per 10,000",chi_crime_r
+Children in out-of-home care (2010-2012) Number,out_home_n
+Children in out-of-home care (2010-2012) Rate per 100,out_home_r
+Early and frequent prenatal care (2008-2010) number,natal_care_n
+Early and frequent prenatal care (2008-2010) percent,natal_care_p
+"Families with income less than $25,000 (2007-2011)",fam_inc_15
+Families with related children living below poverty level (2007-2011),fam_chi_pov
+Family households (2010),f_husb_wif
+Family households (2010),f_sing_fath
+Family households (2010),f_sing_moth
+Family households (2010),fam_total
+Infant deaths (2008-2010),inf_death
+K-12 JCPS students experiencing homelessness (SY 2011-2012) number,st_no_hom_n
+K-12 JCPS students experiencing homelessness (SY 2011-2012) percent,st_no_hom_p
+K-12 students absent 10% or more school days (SY 2011-2012) number,st_abs_10_n
+K-12 students absent 10% or more school days (SY 2011-2012) perrcent,st_abs_10_p
+K-12 students enrolled in public schools (2007-2011),k-12_st_num
+K-12 students with at least 1 out-of-school suspension (SY 2011-2012) number,st_susp_num
+K-12 students with at least 1 out-of-school suspension (SY 2011-2012) percent,st_susp_per
+Kindergarteners ready to learn (SY 2012-2013) number ,kind_read_n
+Kindergarteners ready to learn (SY 2012-2013) percent,kind_read_p
+Population in owned and rented homes (2010) owned percent,own_home
+Population in owned and rented homes (2010) rented percent,rent_home
+Proportion of child abuse_neglect referrals substantiated (2010-2012),abus_subst
+Proportion of children under age 5 (2010),ch_prop_5
+Referrals to child protection services for abuse_neglect (2010-2012) number,abus_ref_n
+Referrals to child protection services for abuse_neglect (2010-2012) pecent,abus_ref_p
+Renters with affordable housing costs (2007-2011),aff_rent
+Repeat births to teens ages 15-19 (2008-2010) number,rep_tn_bir_n
+Repeat births to teens ages 15-19 (2008-2010) percent,rep_tn_bir_p
+"Serious crimes reported to Louisville Metro Police Dept. (2010-2012) rate per 10,000",ser_crimes
+Substantiated cases of child abuse_neglect (2010-2012) number ,abus_subs_n
+Substantiated cases of child abuse_neglect (2010-2012) percent,abus_subs_p
+Teen deaths ages 15-19 (2008-2010) number,tn_death
+Total births (2008-2010) number,tot_birth_n
+Total housing units (2010),hous_unit
+Total population (2010),tot_pop
+Total population in poverty (2007-2011),tot_pop_pov
+Unemployment rate for families with own children (2007-2011),unemp_fam
+Vacant housing units (2010),vac_hous
+Youth taken into custody by Louisville Metro Police Department 2010-2012,custody
