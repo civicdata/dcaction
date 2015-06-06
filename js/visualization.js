@@ -144,7 +144,7 @@ function drawChoropleth(){
     .defer(d3.csv, "data/kids_count_data/council_data_update.csv")
     .defer(d3.csv, "data/kids_count_data/kids_count_fields.csv")
     .defer(d3.json, "data/kids_count_data/council_bound2.geojson")
-    .defer(d3.csv, "data/source.csv")
+    .defer(d3.csv, "data/kids_count_data/kidscount_source.csv")
     .await(setUpChoropleth);
 
   function setUpChoropleth(error, choropleth, fields, dc, source) {
