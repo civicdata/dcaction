@@ -10,7 +10,6 @@ h1, h2, h3, h4, h5 {
 p {
   font-size: 1.1em;
   line-height: 1.4em;
-  margin-bottom: 15px;
 }
 #narrative .panel-body {
   padding: 20px;
@@ -31,6 +30,12 @@ p {
   color: #000;
 }
 
+.social-media {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 .align-right { text-align: right; }
 .align-left { text-align: left; }
 
@@ -46,7 +51,7 @@ p {
   padding: 0px 15px 0px 0px;
 }
 .navbar-brand img {
-  width: 80px;
+  width: 65px;
 }
 .navbar .btn.pull-right {
   margin: 0 0 5px 5px;
