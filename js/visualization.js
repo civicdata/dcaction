@@ -141,7 +141,7 @@ function transform(d) {
 function drawChoropleth(){
 
   queue()
-    .defer(d3.csv, "data/fields.csv")
+    .defer(d3.csv, "data/kids_count_data/kids_count_fields.csv")
     .defer(d3.json, "data/kids_count_data/council_bound2.geojson")
     .defer(d3.csv, "data/kids_count_data/council_data.csv")
     .defer(d3.csv, "data/source.csv")
@@ -158,12 +158,12 @@ function drawChoropleth(){
       choropleth_data[d.council_num] = +d.population_total;
     });
 
-    all_data.dc = {
+    all_data.ville = {
       NBH_NAMES: "Louisville, Ky.",
-      population_total_val: 619371,
-      population_under_18_val: 105291,
-      single_mother_families_perc: 0.469,
-      children_in_poverty_perc: 0.287
+      tot_pop: 741096,
+      child_pop_n: 171807,
+      tot_pop_pov: 0.157,
+      fam_chi_pov: 0.197
     };
 
     displayPopBox();
@@ -416,7 +416,7 @@ function changeNeighborhoodData(new_data_column) {
         all_data[d.properties.gis_id][currentMetric] === '0'){
         return defaultColor;
       } else {
-        return choro_color(all_data[d.properties.gis_id][new_data_column]);
+        return choro_color(all_data[d.properties.council_num][new_data_column]);
       }
     })
     .style("fill-opacity",0.75);
@@ -794,7 +794,7 @@ function displayPopBox(d) {
   }
 
   var $popbox = $("#pop-info"),
-      highlighted = d ? all_data[d.properties.gis_id] : all_data.dc;
+      highlighted = d ? all_data[d.properties.council_num] : all_data.ville;
 
   d3.select(".neighborhood").html(highlighted.NBH_NAMES);
 
@@ -838,7 +838,7 @@ function highlightNeigborhood(d, isOverlayDraw) {
       .classed("active", centered && function(d) { return d === centered; });
 
     // if d is a neighborhood boundary and clicked
-    if (d && all_data[d.properties.gis_id]){
+    if (d && all_data[d.properties.council_num]){
       displayPopBox(d);
       //last neighborhood to display in popBox.
       activeId = d.properties.gis_id;
@@ -878,7 +878,7 @@ function hoverNeighborhood(d) {
   //but also keep centered neighborhood path up front
   bringNeighborhoodToFront();
 
-  if (d && all_data[d.properties.gis_id]){
+  if (d && all_data[d.properties.council_num]){
     displayPopBox(d);
     //last neighborhood to display in popBox.
     activeId = d.properties.gis_id;
