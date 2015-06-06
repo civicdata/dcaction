@@ -143,7 +143,7 @@ function drawChoropleth(){
   queue()
     .defer(d3.csv, "data/fields.csv")
     .defer(d3.json, "data/kids_count_data/council_bound2.geojson")
-    .defer(d3.csv, "data/neighborhoods.csv")
+    .defer(d3.csv, "data/kids_count_data/council_data.csv")
     .defer(d3.csv, "data/source.csv")
     .await(setUpChoropleth);
 
@@ -154,12 +154,12 @@ function drawChoropleth(){
     choropleth_data = choropleth;
     source_data = source;
     choropleth_data.forEach(function(d) {
-      all_data[d.council_da] = d;
-      choropleth_data[d.council_da] = +d.population_total;
+      all_data[d.council_num] = d;
+      choropleth_data[d.council_num] = +d.population_total;
     });
 
     all_data.dc = {
-      NBH_NAMES: "Washington, DC",
+      NBH_NAMES: "Louisville, Ky.",
       population_total_val: 619371,
       population_under_18_val: 105291,
       single_mother_families_perc: 0.469,
