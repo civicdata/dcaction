@@ -173,7 +173,7 @@ function drawChoropleth(){
       zoom: 12,
       minZoom: 10,
       maxZoom: 14,
-      center: new google.maps.LatLng(38.2500, -85.7667),
+      center: new google.maps.LatLng(38.20, -85.68),
       mapTypeId: google.maps.MapTypeId.ROADMAP,
       streetViewControl: false,
       panControl: false,
@@ -210,7 +210,7 @@ function drawChoropleth(){
 
     gmap.setZoom(
       containerHeight < 250 ? 10 :
-      containerHeight < 520 ? 11 : 12
+      containerHeight < 520 ? 10 : 11
     );
 
     var maxBounds = new google.maps.LatLngBounds(
