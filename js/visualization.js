@@ -5,9 +5,9 @@ var COUNT_SCHOOL_DISPLAY = 3;
 var centered;
 
 var svg, projection, gmapProjection, path, g, gmap;
-var activeId = 'dc',
+var activeId = 'ville',
     choropleth_data, source_data;
-var all_data = {}, activeData = "population_total";
+var all_data = {}, activeData = "tot_pop_val";
 var min_population = 100;
 var defaultColor = "#aaa";
 var chartSvg, labels, anchors, links, label_array = [], anchor_array = [];
@@ -143,7 +143,7 @@ function drawChoropleth(){
   queue()
     .defer(d3.csv, "data/kids_count_data/kids_count_fields.csv")
     .defer(d3.json, "data/kids_count_data/council_bound2.geojson")
-    .defer(d3.csv, "data/kids_count_data/council_data.csv")
+    .defer(d3.csv, "data/kids_count_data/council_data_update.csv")
     .defer(d3.csv, "data/source.csv")
     .await(setUpChoropleth);
 
@@ -155,15 +155,15 @@ function drawChoropleth(){
     source_data = source;
     choropleth_data.forEach(function(d) {
       all_data[d.council_num] = d;
-      choropleth_data[d.council_num] = +d.population_total;
+      choropleth_data[d.council_num] = +d.tot_pop_val;
     });
 
     all_data.ville = {
-      NBH_NAMES: "Louisville, Ky.",
-      tot_pop: 741096,
-      child_pop_n: 171807,
-      tot_pop_pov: 0.157,
-      fam_chi_pov: 0.197
+      council_dis: "Louisville, Ky.",
+      tot_pop_val: 741096,
+      childpop_val: 171807,
+      tot_pop_pov_perc: 0.157,
+      fam_chi_pov_perc: 0.197
     };
 
     displayPopBox();
@@ -286,15 +286,15 @@ function drawChoropleth(){
           .on("mouseover", hoverNeighborhood)
           .on("mouseout", function () {
             if ($("path.active").length === 0) {
-              activeId = 'dc';
+              activeId = 'ville';
               $("#visualized-measure").text("");
               displayPopBox();
             }
           })
           .on("click", function(d) { highlightNeigborhood(d, false); })
           .style("fill",function(d) {
-            if (currentMetric === null || all_data[d.properties.gis_id][currentMetric] === '0') { return defaultColor; }
-            else { return choro_color(all_data[d.properties.gis_id][currentMetric]); }
+            if (currentMetric === null || all_data[d.properties.council_num][currentMetric] === '0') { return defaultColor; }
+            else { return choro_color(all_data[d.properties.council_num][currentMetric]); }
           })
           .style("fill-opacity",0.75);
 
@@ -404,16 +404,16 @@ function changeNeighborhoodData(new_data_column) {
     .domain(jenks.slice(1,-1))
     .range(color_palette);
   choropleth_data.forEach(function(d) {
-    choropleth_data[d.gis_id] = +d[new_data_column];
+    choropleth_data[d.council_num] = +d[new_data_column];
   });
 
   g.select("#neighborhoods").selectAll("path")
     .transition().duration(600)
     .style("fill", function(d) {
-      if(typeof all_data[d.properties.gis_id] ==="undefined" ||
-        all_data[d.properties.gis_id].population_total < min_population ||
-        !all_data[d.properties.gis_id][new_data_column] ||
-        all_data[d.properties.gis_id][currentMetric] === '0'){
+      if(typeof all_data[d.properties.council_num] ==="undefined" ||
+        all_data[d.properties.council_num].tot_pop_val < min_population ||
+        !all_data[d.properties.council_num][new_data_column] ||
+        all_data[d.properties.council_num][currentMetric] === '0'){
         return defaultColor;
       } else {
         return choro_color(all_data[d.properties.council_num][new_data_column]);
@@ -796,7 +796,7 @@ function displayPopBox(d) {
   var $popbox = $("#pop-info"),
       highlighted = d ? all_data[d.properties.council_num] : all_data.ville;
 
-  d3.select(".neighborhood").html(highlighted.NBH_NAMES);
+  d3.select(".neighborhood").html(highlighted.council_dis);
 
   var val, key, typeDef;
   $.each($popbox.find("tr"), function(k, row){
@@ -841,7 +841,7 @@ function highlightNeigborhood(d, isOverlayDraw) {
     if (d && all_data[d.properties.council_num]){
       displayPopBox(d);
       //last neighborhood to display in popBox.
-      activeId = d.properties.gis_id;
+      activeId = d.properties.council_num;
       setVisMetric(activeData, all_data[activeId][activeData]);
       updateChart(all_data[activeId]);
     }
@@ -881,11 +881,10 @@ function hoverNeighborhood(d) {
   if (d && all_data[d.properties.council_num]){
     displayPopBox(d);
     //last neighborhood to display in popBox.
-    activeId = d.properties.gis_id;
-
+    activeId = d.properties.council_num;
     if (activeData !== "no_neighborhood_data") {
       setVisMetric(activeData, all_data[activeId][activeData]);
-      updateChart(all_data[activeId]);
+      //updateChart(all_data[activeId]); -- bret
     } else {
       setVisMetric(null, null, true);
     }
@@ -911,6 +910,9 @@ function getDisplayValue(strNum, name, typeDef) {
     case "val":
       num = Math.round(num);
       return number_formatter(parseInt(num, 10));
+    case "rate":
+      num = num;
+      return number_formatter(parseInt(num, 10));  
     case "cur":
       return "$" + number_formatter(parseInt(num, 10));
     case "ratio":
@@ -940,7 +942,7 @@ function setVisMetric(metric, val, clear) {
     var typeDef = $metricType[0].id;
     typeDef = typeDef.slice(typeDef.lastIndexOf("_") + 1);
     $metric.text(metricText);
-    var newDesc = activeId === 'dc' ? '' : val === "" ? "N/A" : getDisplayValue(val, metricText, typeDef);
+    var newDesc = activeId === 'ville' ? '' : val === "" ? "N/A" : getDisplayValue(val, metricText, typeDef);
     $metricDesc.text(newDesc);
   }
 }
