@@ -160,7 +160,7 @@ function drawChoropleth(){
     });
 
     all_data.ville = {
-      council_dis: "Louisville, Ky.",
+      council_dis: "Louisville Metro",
       tot_pop_val: 741096,
       childpop_val: 171807,
       tot_pop_pov_perc: 0.157,
