@@ -1,0 +1,65 @@
+layer,source,url
+ch_prop_5,2010 Decennial Census,http://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml
+childpop_bla_perc,2010 Decennial Census,http://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml
+childpop_his_perc,2010 Decennial Census,http://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml
+childpop_val,2010 Decennial Census,http://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml
+childpop_oth_perc,2010 Decennial Census,http://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml
+childpop_perc,2010 Decennial Census,http://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml
+childpop_whi_perc,2010 Decennial Census,http://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml
+f_husb_wif_perc,2010 Decennial Census,http://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml
+f_sing_fath_perc,2010 Decennial Census,http://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml
+f_sing_moth_perc,2010 Decennial Census,http://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml
+fam_total_val,2010 Decennial Census,http://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml
+tot_pop_val,2010 Decennial Census,http://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml
+own_home_val,2010 Decennial Census,http://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml
+rent_home_perc,2010 Decennial Census,http://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml
+vac_hous_perc,2010 Decennial Census,http://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml
+jcps_3-4_pre,"American Community Survey, 2007-2011",http://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml
+priv_nurs_3-4_perc,"American Community Survey, 2007-2011",http://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml
+aff_rent_perc,"American Community Survey, 2007-2011",http://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml
+fam_chi_pov_perc,"American Community Survey, 2007-2011",http://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml
+fam_inc_15_perc,"American Community Survey, 2007-2011",http://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml
+no_work-sch,"American Community Survey, 2007-2011",http://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml
+st_no_hom_val,"American Community Survey, 2007-2011",http://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml
+hous_unit_val,"American Community Survey, 2007-2011",http://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml
+no_degre25,"American Community Survey, 2007-2011",http://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml
+tot_pop_pov_perc,"American Community Survey, 2007-2011",http://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml
+abus_ref_val,"Cabinet for Health and Family Services, 2008-2010",http://chfs.ky.gov/
+abus_ref_rat_val,"Cabinet for Health and Family Services, 2008-2010",http://chfs.ky.gov/
+abus_subs_val,"Cabinet for Health and Family Services, 2008-2010",http://chfs.ky.gov/
+abus_subs_rat_val,"Cabinet for Health and Family Services, 2008-2010",http://chfs.ky.gov/
+abus_subst_perc,"Cabinet for Health and Family Services, 2008-2010",http://chfs.ky.gov/
+childdeath19_val,"Cabinet for Health and Family Services, 2008-2010",http://chfs.ky.gov/
+custody_val,"Cabinet for Health and Family Services, 2008-2010",http://chfs.ky.gov/
+natal_care_perc,"Cabinet for Health and Family Services, 2008-2010",http://chfs.ky.gov/
+out_home_val,"Cabinet for Health and Family Services, 2008-2010",http://chfs.ky.gov/
+out_home_rat_val,"Cabinet for Health and Family Services, 2008-2010",http://chfs.ky.gov/
+rep_tn_bir_val,"Cabinet for Health and Family Services, 2008-2010",http://chfs.ky.gov/
+rep_tn_bir_perc,"Cabinet for Health and Family Services, 2008-2010",http://chfs.ky.gov/
+teenbir_val,"Cabinet for Health and Family Services, 2008-2010",http://chfs.ky.gov/
+teenbir_rate_val,"Cabinet for Health and Family Services, 2008-2010",http://chfs.ky.gov/
+tn_death_val,"Cabinet for Health and Family Services, 2008-2010",http://chfs.ky.gov/
+tot_birth_val,"Cabinet for Health and Family Services, 2008-2010",http://chfs.ky.gov/
+childdeath14_val,"Cabinet for Health and Family Services, 2010-2012",http://chfs.ky.gov/
+gra4_math_perc,"Jefferson County Public Schools, SY 2011-2012",http://www.jefferson.k12.ky.us/
+gra4_read_perc,"Jefferson County Public Schools, SY 2011-2012",http://www.jefferson.k12.ky.us/
+gra8_math_perc,"Jefferson County Public Schools, SY 2011-2012",http://www.jefferson.k12.ky.us/
+gra8_read_perc,"Jefferson County Public Schools, SY 2011-2012",http://www.jefferson.k12.ky.us/
+k-12_st_num,"Jefferson County Public Schools, SY 2011-2012",http://www.jefferson.k12.ky.us/
+kind_read_perc,"Jefferson County Public Schools, SY 2011-2012",http://www.jefferson.k12.ky.us/
+st_abs_10_val,"Jefferson County Public Schools, SY 2011-2012",http://www.jefferson.k12.ky.us/
+st_abs_10_perc,"Jefferson County Public Schools, SY 2011-2012",http://www.jefferson.k12.ky.us/
+st_susp_val,"Jefferson County Public Schools, SY 2011-2012",http://www.jefferson.k12.ky.us/
+st_susp_perc,"Jefferson County Public Schools, SY 2011-2012",http://www.jefferson.k12.ky.us/
+st_no_hom_perc,"Jefferson County Public Schools, SY 2011-2012",http://www.jefferson.k12.ky.us/
+unemp_fam_perc,"Jefferson County Public Schools, SY 2011-2012",http://www.jefferson.k12.ky.us/
+gr6-12_disc_val,"Jefferson County Public Schools, SY 2012-2013",http://www.jefferson.k12.ky.us/
+gra12_grad4_perc,"Jefferson County Public Schools, SY 2012-2013",http://www.jefferson.k12.ky.us/
+stars_rated_childcare,Kentucky Cabinet for Health and Family Services ,http://chfs.ky.gov/
+payday_lending,Kentucky Department of Financial Institutions,Kentucky Department of Financial Institutions
+health_centers,Louisville Metro Department of Public Health & Wellness,https://louisvilleky.gov/government/health-wellness
+chi_crime_val,"Louisville Metro Police Department, 2010-2012",https://louisvilleky.gov/government/police
+chi_crime_rat_val,"Louisville Metro Police Department, 2010-2012",https://louisvilleky.gov/government/police
+inf_death_val,"Louisville Metro Police Department, 2010-2012",https://louisvilleky.gov/government/police
+ser_crimes_val,"Louisville Metro Police Department, 2010-2012",https://louisvilleky.gov/government/police
+healthy_food,Mayor's Healthy Hometown,https://louisvilleky.gov

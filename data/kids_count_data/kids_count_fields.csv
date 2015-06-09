@@ -1,0 +1,65 @@
+id,name,type,category,new
+health_centers,Health Centers,poi,,FALSE
+healthy_food,Healthy Food,poi,,FALSE
+payday_lending,Payday Lending,poi,,FALSE
+stars_rated_childcare,STARS-rated Child Care Facilities,poi,,FALSE
+abus_ref_val,Referrals to child protection services for abuse_neglect (2010-2012) number,council,Health & Safety,FALSE
+abus_ref_rat_val,Referrals to child protection services for abuse_neglect (2010-2012) percent,council,Health & Safety,FALSE
+abus_subs_val,Substantiated cases of child abuse_neglect (2010-2012) number,council,Health & Safety,FALSE
+abus_subs_rat_val,Substantiated cases of child abuse_neglect (2010-2012) percent,council,Health & Safety,FALSE
+abus_subst_perc,Proportion of child abuse_neglect referrals substantiated (2010-2012),council,Health & Safety,FALSE
+aff_rent_perc,Renters with affordable housing costs (2007-2011),council,Economic Security,FALSE
+ch_prop_5,Proportion of children under age 5 (2010),council,Demographics,FALSE
+chi_crime_val,Child victims of serious violent crimes (2010-2012) number,council,Health & Safety,FALSE
+chi_crime_rat_val,"Child victims of serious violent crimes (2010-2012) rate per 10,000",council,Health & Safety,FALSE
+childdeath14_val,Child deaths ages 1-14 (2008-2010) Number,council,Health & Safety,FALSE
+childdeath19_val,"Child and teen death rate (ages 1-19) (2008-2010) Rate per 10,000",council,Health & Safety,FALSE
+childpop_bla_perc,Child population by race_ethnicity (2010),council,Demographics,FALSE
+childpop_his_perc,Child population by race_ethnicity (2010),council,Demographics,FALSE
+childpop_val,Child population (2010) Number,council,Demographics,FALSE
+childpop_oth_perc,Child population by race_ethnicity 2010),council,Demographics,FALSE
+childpop_perc,Child population (2010) Percent,council,Demographics,FALSE
+childpop_whi_perc,Child population by race_ethnicity (2010),council,Demographics,FALSE
+custody_val,Youth taken into custody by Louisville Metro Police Department 2010-2012,council,Health & Safety,FALSE
+f_husb_wif_perc,Family households (2010),council,Demographics,FALSE
+f_sing_fath_perc,Family households (2010),council,Demographics,FALSE
+f_sing_moth_perc,Family households (2010),council,Demographics,FALSE
+fam_chi_pov_perc,Families with related children living below poverty level (2007-2011),council,Economic Security,FALSE
+fam_inc_15_perc,"Families with income less than $25,000 (2007-2011)",council,Economic Security,FALSE
+fam_total_val,Family households (2010),council,Demographics,FALSE
+gr6-12_disc_val,6th-12th graders enrolled in one of three alternative schools for discipline (SY 2011-2012),council,Education,FALSE
+gra12_grad4_perc,"12th graders graduating within 4 years, or more with an IEP (SY 2011-2012)",council,Education,FALSE
+gra4_math_perc,4th graders scoring proficient or above in reading and math (SY 2011-12),council,Education,FALSE
+gra4_read_perc,4th graders scoring proficient or above in reading and math (SY 2011-12),council,Education,FALSE
+gra8_math_perc,8th graders scoring proficient or above in reading and math (SY 2011-12),council,Education,FALSE
+gra8_read_perc,8th graders scoring proficient or above in reading and math (SY 2011-12),council,Education,FALSE
+hous_unit_val,Total housing units (2010),council,Community Environment,FALSE
+inf_death_val,Infant deaths (2008-2010),council,Health & Safety,FALSE
+jcps_3-4_pre,3 and 4-year-olds enrolled in JCPS preschool (SY 2012-2013),council,Education,FALSE
+k-12_st_num,K-12 students enrolled in public schools (2007-2011),council,Education,FALSE
+kind_read_perc,Kindergarteners ready to learn (SY 2012-2013) percent,council,Education,FALSE
+natal_care_perc,Early and frequent prenatal care (2008-2010) percent,council,Health & Safety,FALSE
+no_degre25,Adults age 25 and older without an associate's degree or higher (2007-2011),council,Community Environment,FALSE
+no_work-sch,16-19 year olds not enrolled in school and not working (Metro Council District),council,Economic Security,FALSE
+out_home_val,Children in out-of-home care (2010-2012) Number,council,Health & Safety,FALSE
+out_home_rat_val,Children in out-of-home care (2010-2012) Rate per 100,council,Health & Safety,FALSE
+own_home_val,Population in owned and rented homes (2010) owned percent,council,Community Environment,FALSE
+priv_nurs_3-4_perc,3 and 4-year-olds attending nursery_preschool enrolled in a private program (2007-2011),council,Education,FALSE
+rent_home_perc,Population in owned and rented homes (2010) rented percent,council,Community Environment,FALSE
+rep_tn_bir_val,Repeat births to teens ages 15-19 (2008-2010) number,council,Health & Safety,FALSE
+rep_tn_bir_perc,Repeat births to teens ages 15-19 (2008-2010) percent,council,Health & Safety,FALSE
+ser_crimes_val,"Serious crimes reported to Louisville Metro Police Dept. (2010-2012) rate per 10,000",council,Community Environment,FALSE
+st_abs_10_val,K-12 students absent 10% or more school days (SY 2011-2012) number,council,Education,FALSE
+st_abs_10_perc,K-12 students absent 10% or more school days (SY 2011-2012) perrcent,council,Education,FALSE
+st_no_hom_val,K-12 JCPS students experiencing homelessness (SY 2011-2012) number,council,Economic Security,FALSE
+st_no_hom_perc,K-12 JCPS students experiencing homelessness (SY 2011-2012) percent,council,Economic Security,FALSE
+st_susp_val,K-12 students with at least 1 out-of-school suspension (SY 2011-2012) number,council,Education,FALSE
+st_susp_perc,K-12 students with at least 1 out-of-school suspension (SY 2011-2012) percent,council,Education,FALSE
+teenbir_val,Births to teens ages 15-19 (2008-2010),council,Health & Safety,FALSE
+teenbir_rate_val,"Births to teens ages 15-19 (2008-2010), Rate per 1,000",council,Health & Safety,FALSE
+tn_death_val,Teen deaths ages 15-19 (2008-2010) number,council,Health & Safety,FALSE
+tot_birth_val,Total births (2008-2010) number,council,Health & Safety,FALSE
+tot_pop_val,Total population (2010),council,Demographics,FALSE
+tot_pop_pov_perc,Total population in poverty (2007-2011),council,Community Environment,FALSE
+unemp_fam_perc,Unemployment rate for families with own children (2007-2011),council,Economic Security,FALSE
+vac_hous_perc,Vacant housing units (2010),council,Community Environment,FALSE
